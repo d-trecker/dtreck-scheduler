@@ -49,53 +49,53 @@
           <thead>
             <tr>
               <th scope="col">Time</th>
-              <th scope="col" style="text-align: center">Appointment</th>
-              <th scope="col" style="text-align: center">Buttons</th>
+              <th scope="col" style="text-align: center">Appointments</th>
+              <th scope="col" style="text-align: center"></th>
             </tr>
           </thead>
           <tbody>
             <tr id = "time-row">
-              <th scope="row">9AM</th>
-              <td class="col-8 apt" id="aptId">Appointment</td>
-              <td class="col-4">Button</td>
+              <th scope="row" id="timeId">9AM</th>
+              <td class="col-8 apt" id="aptId"><textarea class="edit col-12"></textarea></td>
+              <td class="col-4"><button class="saveBtn" id="saveId">Save</button></td>
             </tr>
             <tr id = "time-row">
               <th scope="row">10AM</th>
-              <td id="aptId" class="apt">Appointment</td>
+              <td id="aptId" class="apt"><textarea class="edit col-12"></textarea></td>
               <td><button class="saveBtn" id="saveId">Save</button></td>
             </tr>
             <th scope="row" id="timeId">11AM</th>
-            <td id="aptId" class="apt">Appointment</td>
+            <td id="aptId" class="apt"><textarea class="edit col-12"></textarea></td>
             <td><button class="saveBtn" id="saveId">Save</button></td>
           </tr>
           <tr>
             <th scope="row" id="timeId">12PM</th>
-            <td id="aptId">Appointment</td>
+            <td id="aptId"><textarea class="edit col-12"></textarea></td>
             <td><button class="saveBtn" id="saveId">Save</button></td>
           </tr>
           <tr>
             <th scope="row" id="timeId">1PM</th>
-            <td id="aptId">Appointment</td>
+            <td id="aptId"><textarea class="edit col-12"></textarea></td>
             <td><button class="saveBtn" id="saveId">Save</button></td>
           </tr>
           <tr>
             <th scope="row" id="timeId">2PM</th>
-            <td id="aptId">Appointment</td>
+            <td id="aptId"><textarea class="edit col-12"></textarea></td>
             <td><button class="saveBtn" id="saveId">Save</button></td>
           </tr>
           <tr>
             <th scope="row" id="timeId">3PM</th>
-            <td id="aptId">Appointment</td>
+            <td id="aptId"><textarea class="edit col-12"></textarea></td>
             <td><button class="saveBtn" id="saveId">Save</button></td>
           </tr>
           <tr>
             <th scope="row" id="timeId">4PM</th>
-            <td id="aptId">Appointment</td>
+            <td id="aptId"><textarea class="edit col-12"></textarea></td>
             <td><button class="saveBtn" id="saveId">Save</button></td>
           </tr>
           <tr>
             <th scope="row" id="timeId">5PM</th>
-            <td id="aptId">Appointment</td>
+            <td id="aptId"><textarea class="edit col-12"></textarea></td>
             <td><button class="saveBtn" id="saveId">Save</button></td>
           </tr>
           </tbody>
@@ -108,18 +108,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <!--Start Current Time Script-->
-    <script>
-      const currentTime = document.getElementById("display-time");
 
-      function timeUpdate() {
-        const now = moment();
-        const time = now.format("dddd, MMMM Do YYYY, h:mm:ss a");
-
-        currentTime.textContent = time;
-      }
-      setInterval(timeUpdate, 1000);
-      timeUpdate();
-    </script>
     <!--End Current Time Script-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

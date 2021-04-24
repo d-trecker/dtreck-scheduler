@@ -1,23 +1,31 @@
-const apt = document.querySelectorAll("#table-edit td.apt");
+//----Display Time----
+const currentTime = document.getElementById("display-time");
 
-// const apt = document.getElementById("aptId");
-const timeRow = document.getElementById("time-row");
+function timeUpdate() {
+  const now = moment();
+  const time = now.format("dddd, MMMM Do YYYY, h:mm:ss a");
 
-apt.forEach(function (aptSet) {
-  aptSet.addEventListener("click", function () {
-    apt.style.background = "blue";
-  });
-});
+  currentTime.textContent = time;
+}
+setInterval(timeUpdate, 1000);
+timeUpdate();
+//----End Display Time----
 
-// var t = document.getElementById("table-edit"),
-//   d = t.getElementByTagName("tr")[0],
-//   r = d.getElementByTagName("td")[0];
+//----Capture User input----
+var apptInput = function () {
+  $(".edit").on("click");
+  console.log(apptInput);
+};
 
-// apt.onclick = function () {
-//   debugger;
-//   apt.style.background = "blue";
-// };
+//----End Capture User Input----
 
+//----Save Tasks----
+
+var saveAppt = function () {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+};
+
+//--------------Things still needed to do--------------
 //save to local storage
 
 // save appointment
