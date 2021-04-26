@@ -20,14 +20,13 @@
     />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
@@ -54,47 +53,47 @@
             </tr>
           </thead>
           <tbody>
-            <tr id = "time-row">
-              <th scope="row">9AM</th>
+            <tr>
+              <th scope="row" class = "aptTime" id = "9">9AM</th>
               <td class="col-8 apt"><textarea id = "appt9" class="edit col-12"></textarea></td>
               <td class="col-4"><button class="col-12 saveBtn far fa-save" onclick= "saveAppt('9AM', document.getElementById('appt9').value)" id="saveId"></button></td>
             </tr>
-            <tr id = "time-row">
-              <th scope="row">10AM</th>
+            <tr>
+              <th scope="row" class = "aptTime" id = "10">10AM</th>
               <td class="apt"><textarea id = "appt10" class="edit col-12"></textarea></td>
               <td class="col-4"><button class="col-12 saveBtn far fa-save" id="saveId" onclick= "saveAppt('10AM', document.getElementById('appt10').value)"></button></td>
             </tr>
-            <th scope="row" id="timeId">11AM</th>
+            <th scope="row" class = "aptTime" id = "11">11AM</th>
             <td class="apt"><textarea id = "appt11"class="edit col-12"></textarea></td>
             <td class="col-4"><button class="col-12 saveBtn far fa-save"onclick= "saveAppt('11AM', document.getElementById('appt11').value)" id="saveId"></button></td>
           </tr>
           <tr>
-            <th scope="row" id="timeId">12PM</th>
+            <th scope="row" class = "aptTime" id = "12">12PM</th>
             <td><textarea class="edit col-12" id = "appt12"></textarea></td>
             <td class="col-4"><button class="col-12 saveBtn far fa-save" id="saveId" onclick= "saveAppt('12PM', document.getElementById('appt12').value)"></button></td>
           </tr>
           <tr>
-            <th scope="row" id="timeId">1PM</th>
+            <th scope="row" class = "aptTime" id = "13">1PM</th>
             <td><textarea class="edit col-12" id = "appt1"></textarea></td>
             <td class="col-4"><button class="col-12 saveBtn far fa-save" id="saveId" onclick= "saveAppt('1PM', document.getElementById('appt1').value)"></button></td>
           </tr>
           <tr>
-            <th scope="row" id="timeId">2PM</th>
+            <th scope="row" class = "aptTime" id = "14">2PM</th>
             <td><textarea class="edit col-12" id = "appt2"></textarea></td>
             <td class="col-4"><button class="col-12 saveBtn far fa-save" id="saveId" onclick= "saveAppt('2PM', document.getElementById('appt2').value)"></button></td>
           </tr>
           <tr>
-            <th scope="row" id="timeId">3PM</th>
+            <th scope="row" class = "aptTime" id = "15">3PM</th>
             <td><textarea class="edit col-12" id = "appt3"></textarea></td>
             <td class="col-4"><button class="col-12 saveBtn far fa-save" id="saveId" onclick= "saveAppt('3PM', document.getElementById('appt3').value)"></button></td>
           </tr>
           <tr>
-            <th scope="row" id="timeId">4PM</th>
+            <th scope="row" class = "aptTime" id = "16">4PM</th>
             <td><textarea class="edit col-12" id = "appt4"></textarea></td>
             <td class="col-4"><button class="col-12 saveBtn far fa-save" id="saveId" onclick= "saveAppt('4PM', document.getElementById('appt4').value)"></button></td>
           </tr>
           <tr>
-            <th scope="row" id="timeId">5PM</th>
+            <th scope="row" class = "aptTime" id = "17">5PM</th>
             <td><textarea class="edit col-12" id = "appt5"></textarea></td>
             <td class="col-4"><button class="col-12 saveBtn far fa-save" id="saveId" onclick= "saveAppt('5PM', document.getElementById('appt5').value)"></button></td>
           </tr>

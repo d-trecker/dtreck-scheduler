@@ -27,7 +27,7 @@ THEN I am presented with time blocks for standard business hours
 WHEN I view the time blocks for that day
 THEN each time block is color-coded to indicate whether it is in the past, present, or future
 
--
+-Blocks are color coded to indicate time status.
 
 WHEN I click into a time block
 THEN I can enter an event
@@ -45,8 +45,7 @@ THEN the saved events persist
 -If page is refreshed, saved events persist.
 
 </br>
-</br>
-</br>
+Screenshot: ![](assets/images/snapshot.jpg)
 </br>
 Grading Requirements
 This challenge is graded based on the following criteria:  </br>

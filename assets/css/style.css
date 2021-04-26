@@ -64,8 +64,6 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: black;
   color: rgb(37, 187, 18);
-  width: 100%;
-  height: auto;
 }
 
 .saveBtn i:hover {

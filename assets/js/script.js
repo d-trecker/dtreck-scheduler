@@ -4,11 +4,11 @@ const currentTime = document.getElementById("display-time");
 function timeUpdate() {
   const now = moment();
   const time = now.format("dddd, MMMM Do YYYY, h:mm:ss a");
-
   currentTime.textContent = time;
 }
 setInterval(timeUpdate, 1000);
 timeUpdate();
+
 //----End Display Time----
 
 //----Save Tasks to Local Storage----
@@ -63,6 +63,29 @@ window.onload = function () {
       : "";
 };
 
-//--------------Things still needed to do--------------
-
 //Change class color based on hour
+//----Update Time Block Status----
+setStatus = function () {
+  debugger;
+  const aptBlock = document.getElementsByClassName("aptTime");
+  let currentHour = parseInt(moment().format("H"));
+
+  Array.from(aptBlock).forEach((aptBlock) => {
+    let aptTimeIdString = aptBlock.id,
+      aptTimeHour;
+    if (aptTimeIdString) {
+      aptTimeHour = parseInt(aptTimeIdString);
+    }
+    if (aptTimeHour) {
+      if (currentHour === aptTimeHour) {
+        aptBlock.classList.add("present");
+      } else if (currentHour < aptTimeHour) {
+        aptBlock.classList.add("future");
+      } else if (currentHour > aptTimeHour) {
+        aptBlock.classList.add("past");
+      }
+    }
+  });
+};
+
+setStatus();
