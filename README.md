@@ -45,8 +45,6 @@ THEN the saved events persist
 -If page is refreshed, saved events persist.
 
 </br>
-Screenshot: 
-![](assets/images/snapshot.JPG)
 </br>
 Grading Requirements
 This challenge is graded based on the following criteria:  </br>
@@ -78,3 +76,7 @@ Repository follows best practices for class/id naming conventions, indentation, 
 Repository contains multiple descriptive commit messages
 
 Repository contains quality README file with description, screenshot, and link to deployed application
+
+
+Screenshot: 
+![](assets/images/snapshot.JPG)
