@@ -45,7 +45,8 @@ THEN the saved events persist
 -If page is refreshed, saved events persist.
 
 </br>
-Screenshot: ![](assets/images/snapshot.jpg)
+Screenshot: 
+![](assets/images/snapshot.JPG)
 </br>
 Grading Requirements
 This challenge is graded based on the following criteria:  </br>
