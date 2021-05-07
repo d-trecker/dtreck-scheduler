@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 16px;
   line-height: 1;
   background-color: black;
@@ -15,11 +15,18 @@ textarea {
 }
 
 .jumbotron {
+  /* font-size: 5vh;
+  font-family: 'Orbitron', sans-serif; */
   text-align: center;
   background-color: transparent;
   color: rgb(37, 187, 18);
   border-radius: 0;
   border-bottom: 10px solid rgb(37, 187, 18);
+  background-color: rgba(172, 255, 47, 0.103);
+}
+
+h1 {
+  font-size: 8vh;
 }
 
 .description {
@@ -60,8 +67,7 @@ textarea {
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   background-color: black;
   color: rgb(37, 187, 18);
 }
